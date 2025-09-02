@@ -1,0 +1,128 @@
+# -------------------------
+# OS-Specific
+# -------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+._*
+
+# -------------------------
+# R / RStudio
+# -------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+.Rproj
+*.Rproj
+.Rproj.user/*
+.Rbuildignore
+
+# Package/library cache
+.Rcheck/
+.Rlibs/
+.RlibPaths
+*.Rhistory
+*.RData
+*.Rds
+*.Rda
+*.Rproj
+*README.html
+
+# RMarkdown / Quarto intermediates
+*_cache/
+cache/
+*.utf8.md
+*.knit.md
+*.nb.html
+*.Rout
+*.Rout.save
+*.out
+*.log
+
+# -------------------------
+# SAS
+# -------------------------
+*.log
+*.lst
+*.sas7bdat
+*.sas7bvew
+*.sas7bndx
+*.sas7put
+*.sas7dmd
+*.sas7sdx
+*.sas7cat
+*.sas7inc
+*.sas7key
+*.sas7mat
+*.sas7pid
+*.sas7pnd
+*.sas7prm
+*.sas7sbt
+*.sas7scr
+*.sas7seq
+*.sas7spe
+*.sas7tsa
+*.sas7tst
+*.sas7vdb
+*.sas7vba
+*.sas7vnd
+*.sas7vpm
+*.sas7vpr
+*.sas7vps
+*.sas7vsq
+*.sas7vsr
+*.sas7vst
+*.sas7vta
+*.sas7vtc
+*.sas7vte
+*.sas7vtf
+*.sas7vtn
+*.sas7vts
+*.sas7vtt
+*.sas7vtu
+*.sas7vtx
+
+# -------------------------
+# Output artifacts
+# -------------------------
+Output/*.pdf
+Output/*.rtf
+Output/*.html
+Output/**/*.pdf
+Output/**/*.rtf
+Output/**/*.html
+
+# Keep sample/mock outputs only if intentional
+!Output/ADSL_Tables/**
+
+# -------------------------
+# Secrets / Credentials
+# -------------------------
+*.env
+.env.*
+*.secrets
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+*.token
+*.json
+*.yml
+*.yaml
+
+# -------------------------
+# Miscellaneous / Junk
+# -------------------------
+*.tmp
+*.swp
+*.bak
+*.old
+*.zip
+*.tar.gz
+*.tgz
+*.7z

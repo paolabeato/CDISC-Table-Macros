@@ -1,0 +1,672 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+5                                                          The SAS System                    Tuesday, September  2, 2025 03:50:48 PM
+
+      memory              257.90k
+      OS Memory           27048.00k
+      Timestamp           09/02/2025 07:50:48 PM
+      Step Count                        860  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     16
+      Page Swaps                        0
+      Voluntary Context Switches        9
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+294        
+295        %adsl_assumptions(
+296            data=work_population,
+297            contvars=AGE WEIGHT HEIGHT BMI,
+298            trtvar=ARM,
+299            outdir=/home/&sysuserid/TLFs/Output/ADSL_Tables/ADSL_Assumptions
+300        );
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+NOTE: Saving HTML report to /home/u61946510/TLFs/Output/ADSL_Tables/ADSL_Assumptions/assumption_checks.html
+NOTE: Writing HTML5 Body file: _ASSUMP
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARTYPE referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+NOTE: The data set WORK._NORMALITY has 8 observations and 8 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.16 seconds
+      user cpu time       0.16 seconds
+      system cpu time     0.00 seconds
+      memory              3742.65k
+      OS Memory           32424.00k
+      Timestamp           09/02/2025 07:50:48 PM
+      Step Count                        861  Switch Count  3
+      Page Faults                       0
+      Page Reclaims                     778
+      Page Swaps                        0
+      Voluntary Context Switches        23
+      Involuntary Context Switches      2
+      Block Input Operations            0
+      Block Output Operations           336
+      
+
+NOTE: The data set WORK._NOBS has 2 observations and 9 variables.
+NOTE: The data set WORK._LEVENE has 2 observations and 9 variables.
+NOTE: PROCEDURE GLM used (Total process time):
+      real time           0.42 seconds
+      user cpu time       0.22 seconds
+      system cpu time     0.03 seconds
+6                                                          The SAS System                    Tuesday, September  2, 2025 03:50:48 PM
+
+      memory              18449.34k
+      OS Memory           49988.00k
+      Timestamp           09/02/2025 07:50:48 PM
+      Step Count                        862  Switch Count  8
+      Page Faults                       0
+      Page Reclaims                     5019
+      Page Swaps                        0
+      Voluntary Context Switches        628
+      Involuntary Context Switches      9
+      Block Input Operations            0
+      Block Output Operations           2168
+      
+
+
+NOTE: Variable Statistic is uninitialized.
+NOTE: There were 0 observations read from the data set WORK._NORMALITY.
+      WHERE 0 /* an obviously FALSE WHERE clause */ ;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              627.71k
+      OS Memory           47524.00k
+      Timestamp           09/02/2025 07:50:48 PM
+      Step Count                        863  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     58
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+
+--- Levene's Test for Homogeneity of Variance: p=0.5661
+--- Levene's Test for Homogeneity of Variance: p=_  *VIOLATION*
+NOTE: There were 2 observations read from the data set WORK._LEVENE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              602.00k
+      OS Memory           47524.00k
+      Timestamp           09/02/2025 07:50:48 PM
+      Step Count                        864  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+---------------------------------------------------
+VARIABLE: AGE
+
+7                                                          The SAS System                    Tuesday, September  2, 2025 03:50:48 PM
+
+**ASSUMPTION VIOLATION DETECTED**.
+- Equal variance assumption violated (p < 0.05).
+RECOMMENDATION: Use test_type=KW in table1 macro.
+---------------------------------------------------
+
+
+NOTE: PROCEDURE SGPANEL used (Total process time):
+      real time           0.40 seconds
+      user cpu time       0.09 seconds
+      system cpu time     0.02 seconds
+      memory              4467.90k
+      OS Memory           49332.00k
+      Timestamp           09/02/2025 07:50:49 PM
+      Step Count                        865  Switch Count  26
+      Page Faults                       0
+      Page Reclaims                     1228
+      Page Swaps                        0
+      Voluntary Context Switches        1192
+      Involuntary Context Switches      5
+      Block Input Operations            0
+      Block Output Operations           3088
+      
+NOTE: There were 227 observations read from the data set WORK.WORK_POPULATION.
+
+
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.39 seconds
+      user cpu time       0.21 seconds
+      system cpu time     0.01 seconds
+      memory              4440.90k
+      OS Memory           48940.00k
+      Timestamp           09/02/2025 07:50:49 PM
+      Step Count                        866  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     555
+      Page Swaps                        0
+      Voluntary Context Switches        877
+      Involuntary Context Switches      5
+      Block Input Operations            0
+      Block Output Operations           728
+      
+
+NOTE: Deleting WORK._NORMALITY (memtype=DATA).
+NOTE: Deleting WORK._LEVENE (memtype=DATA).
+NOTE: Deleting WORK._NOBS (memtype=DATA).
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              405.84k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:49 PM
+      Step Count                        867  Switch Count  6
+      Page Faults                       0
+      Page Reclaims                     49
+      Page Swaps                        0
+      Voluntary Context Switches        37
+      Involuntary Context Switches      0
+8                                                          The SAS System                    Tuesday, September  2, 2025 03:50:49 PM
+
+      Block Input Operations            0
+      Block Output Operations           8
+      
+
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARTYPE referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+NOTE: The data set WORK._NORMALITY has 8 observations and 8 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.16 seconds
+      user cpu time       0.16 seconds
+      system cpu time     0.00 seconds
+      memory              1227.71k
+      OS Memory           48552.00k
+      Timestamp           09/02/2025 07:50:49 PM
+      Step Count                        868  Switch Count  3
+      Page Faults                       0
+      Page Reclaims                     119
+      Page Swaps                        0
+      Voluntary Context Switches        23
+      Involuntary Context Switches      3
+      Block Input Operations            0
+      Block Output Operations           344
+      
+
+NOTE: The data set WORK._NOBS has 2 observations and 9 variables.
+NOTE: The data set WORK._LEVENE has 2 observations and 9 variables.
+NOTE: PROCEDURE GLM used (Total process time):
+      real time           0.34 seconds
+      user cpu time       0.21 seconds
+      system cpu time     0.01 seconds
+      memory              5530.21k
+      OS Memory           50756.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        869  Switch Count  8
+      Page Faults                       0
+      Page Reclaims                     1022
+      Page Swaps                        0
+      Voluntary Context Switches        686
+      Involuntary Context Switches      9
+      Block Input Operations            0
+      Block Output Operations           2232
+      
+
+
+NOTE: Variable Statistic is uninitialized.
+NOTE: There were 0 observations read from the data set WORK._NORMALITY.
+      WHERE 0 /* an obviously FALSE WHERE clause */ ;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+9                                                          The SAS System                    Tuesday, September  2, 2025 03:50:50 PM
+
+      memory              627.15k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        870  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+
+--- Levene's Test for Homogeneity of Variance: p=0.7600
+--- Levene's Test for Homogeneity of Variance: p=_  *VIOLATION*
+NOTE: There were 2 observations read from the data set WORK._LEVENE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              601.96k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        871  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+---------------------------------------------------
+VARIABLE: WEIGHT
+
+**ASSUMPTION VIOLATION DETECTED**.
+- Equal variance assumption violated (p < 0.05).
+RECOMMENDATION: Use test_type=KW in table1 macro.
+---------------------------------------------------
+
+
+NOTE: PROCEDURE SGPANEL used (Total process time):
+      real time           0.29 seconds
+      user cpu time       0.09 seconds
+      system cpu time     0.02 seconds
+      memory              4535.53k
+      OS Memory           50100.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        872  Switch Count  26
+      Page Faults                       0
+      Page Reclaims                     994
+      Page Swaps                        0
+      Voluntary Context Switches        1251
+      Involuntary Context Switches      8
+      Block Input Operations            0
+      Block Output Operations           3136
+10                                                         The SAS System                    Tuesday, September  2, 2025 03:50:50 PM
+
+      
+NOTE: There were 227 observations read from the data set WORK.WORK_POPULATION.
+
+
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.31 seconds
+      user cpu time       0.20 seconds
+      system cpu time     0.02 seconds
+      memory              4081.90k
+      OS Memory           49196.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        873  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     421
+      Page Swaps                        0
+      Voluntary Context Switches        838
+      Involuntary Context Switches      6
+      Block Input Operations            0
+      Block Output Operations           744
+      
+
+NOTE: Deleting WORK._NORMALITY (memtype=DATA).
+NOTE: Deleting WORK._LEVENE (memtype=DATA).
+NOTE: Deleting WORK._NOBS (memtype=DATA).
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              398.59k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:50 PM
+      Step Count                        874  Switch Count  6
+      Page Faults                       0
+      Page Reclaims                     48
+      Page Swaps                        0
+      Voluntary Context Switches        31
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           8
+      
+
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARTYPE referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+NOTE: The data set WORK._NORMALITY has 8 observations and 8 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.16 seconds
+      user cpu time       0.16 seconds
+      system cpu time     0.00 seconds
+      memory              1225.09k
+      OS Memory           48552.00k
+      Timestamp           09/02/2025 07:50:50 PM
+11                                                         The SAS System                    Tuesday, September  2, 2025 03:50:50 PM
+
+      Step Count                        875  Switch Count  3
+      Page Faults                       0
+      Page Reclaims                     119
+      Page Swaps                        0
+      Voluntary Context Switches        22
+      Involuntary Context Switches      3
+      Block Input Operations            0
+      Block Output Operations           344
+      
+
+NOTE: The data set WORK._NOBS has 2 observations and 9 variables.
+NOTE: The data set WORK._LEVENE has 2 observations and 9 variables.
+NOTE: PROCEDURE GLM used (Total process time):
+      real time           0.32 seconds
+      user cpu time       0.21 seconds
+      system cpu time     0.02 seconds
+      memory              5417.56k
+      OS Memory           50756.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        876  Switch Count  8
+      Page Faults                       0
+      Page Reclaims                     993
+      Page Swaps                        0
+      Voluntary Context Switches        654
+      Involuntary Context Switches      10
+      Block Input Operations            0
+      Block Output Operations           2288
+      
+
+
+NOTE: Variable Statistic is uninitialized.
+NOTE: There were 0 observations read from the data set WORK._NORMALITY.
+      WHERE 0 /* an obviously FALSE WHERE clause */ ;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              627.21k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        877  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+
+--- Levene's Test for Homogeneity of Variance: p=0.5402
+--- Levene's Test for Homogeneity of Variance: p=_  *VIOLATION*
+NOTE: There were 2 observations read from the data set WORK._LEVENE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+12                                                         The SAS System                    Tuesday, September  2, 2025 03:50:51 PM
+
+      memory              602.12k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        878  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+---------------------------------------------------
+VARIABLE: HEIGHT
+
+**ASSUMPTION VIOLATION DETECTED**.
+- Equal variance assumption violated (p < 0.05).
+RECOMMENDATION: Use test_type=KW in table1 macro.
+---------------------------------------------------
+
+
+NOTE: PROCEDURE SGPANEL used (Total process time):
+      real time           0.23 seconds
+      user cpu time       0.08 seconds
+      system cpu time     0.02 seconds
+      memory              4491.00k
+      OS Memory           50100.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        879  Switch Count  26
+      Page Faults                       0
+      Page Reclaims                     903
+      Page Swaps                        0
+      Voluntary Context Switches        1265
+      Involuntary Context Switches      11
+      Block Input Operations            0
+      Block Output Operations           3096
+      
+NOTE: There were 227 observations read from the data set WORK.WORK_POPULATION.
+
+
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.30 seconds
+      user cpu time       0.19 seconds
+      system cpu time     0.02 seconds
+      memory              4068.37k
+      OS Memory           49196.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        880  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     379
+      Page Swaps                        0
+      Voluntary Context Switches        875
+      Involuntary Context Switches      7
+      Block Input Operations            0
+      Block Output Operations           744
+      
+
+13                                                         The SAS System                    Tuesday, September  2, 2025 03:50:51 PM
+
+NOTE: Deleting WORK._NORMALITY (memtype=DATA).
+NOTE: Deleting WORK._LEVENE (memtype=DATA).
+NOTE: Deleting WORK._NOBS (memtype=DATA).
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.01 seconds
+      system cpu time     0.00 seconds
+      memory              398.71k
+      OS Memory           48292.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        881  Switch Count  6
+      Page Faults                       0
+      Page Reclaims                     48
+      Page Swaps                        0
+      Voluntary Context Switches        37
+      Involuntary Context Switches      1
+      Block Input Operations            0
+      Block Output Operations           16
+      
+
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARNUM referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+ERROR: Argument 1 to function VARTYPE referenced by the %SYSFUNC or %QSYSFUNC macro function is not a number.
+ERROR: Invalid arguments detected in %SYSCALL, %SYSFUNC, or %QSYSFUNC argument list.  Execution of %SYSCALL statement or %SYSFUNC 
+       or %QSYSFUNC function reference is terminated.
+NOTE: The data set WORK._NORMALITY has 8 observations and 8 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.16 seconds
+      user cpu time       0.16 seconds
+      system cpu time     0.00 seconds
+      memory              1227.15k
+      OS Memory           48552.00k
+      Timestamp           09/02/2025 07:50:51 PM
+      Step Count                        882  Switch Count  3
+      Page Faults                       0
+      Page Reclaims                     124
+      Page Swaps                        0
+      Voluntary Context Switches        21
+      Involuntary Context Switches      3
+      Block Input Operations            0
+      Block Output Operations           352
+      
+
+NOTE: The data set WORK._NOBS has 2 observations and 9 variables.
+NOTE: The data set WORK._LEVENE has 2 observations and 9 variables.
+NOTE: PROCEDURE GLM used (Total process time):
+      real time           0.30 seconds
+      user cpu time       0.19 seconds
+      system cpu time     0.01 seconds
+      memory              5520.65k
+      OS Memory           51012.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        883  Switch Count  8
+      Page Faults                       0
+14                                                         The SAS System                    Tuesday, September  2, 2025 03:50:52 PM
+
+      Page Reclaims                     1010
+      Page Swaps                        0
+      Voluntary Context Switches        644
+      Involuntary Context Switches      6
+      Block Input Operations            0
+      Block Output Operations           2232
+      
+
+
+NOTE: Variable Statistic is uninitialized.
+NOTE: There were 0 observations read from the data set WORK._NORMALITY.
+      WHERE 0 /* an obviously FALSE WHERE clause */ ;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.01 seconds
+      system cpu time     0.00 seconds
+      memory              627.90k
+      OS Memory           48548.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        884  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+
+--- Levene's Test for Homogeneity of Variance: p=0.0442  *VIOLATION*
+--- Levene's Test for Homogeneity of Variance: p=_  *VIOLATION*
+NOTE: There were 2 observations read from the data set WORK._LEVENE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              602.15k
+      OS Memory           48548.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        885  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     57
+      Page Swaps                        0
+      Voluntary Context Switches        0
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           0
+      
+
+---------------------------------------------------
+VARIABLE: BMI
+
+**ASSUMPTION VIOLATION DETECTED**.
+- Equal variance assumption violated (p < 0.05).
+RECOMMENDATION: Use test_type=KW in table1 macro.
+---------------------------------------------------
+
+15                                                         The SAS System                    Tuesday, September  2, 2025 03:50:52 PM
+
+
+NOTE: PROCEDURE SGPANEL used (Total process time):
+      real time           0.20 seconds
+      user cpu time       0.08 seconds
+      system cpu time     0.02 seconds
+      memory              4615.53k
+      OS Memory           50356.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        886  Switch Count  26
+      Page Faults                       0
+      Page Reclaims                     920
+      Page Swaps                        0
+      Voluntary Context Switches        1208
+      Involuntary Context Switches      7
+      Block Input Operations            0
+      Block Output Operations           3088
+      
+NOTE: There were 227 observations read from the data set WORK.WORK_POPULATION.
+
+
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           0.30 seconds
+      user cpu time       0.20 seconds
+      system cpu time     0.01 seconds
+      memory              4094.03k
+      OS Memory           49452.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        887  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     435
+      Page Swaps                        0
+      Voluntary Context Switches        890
+      Involuntary Context Switches      8
+      Block Input Operations            0
+      Block Output Operations           744
+      
+
+NOTE: Deleting WORK._NORMALITY (memtype=DATA).
+NOTE: Deleting WORK._LEVENE (memtype=DATA).
+NOTE: Deleting WORK._NOBS (memtype=DATA).
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      user cpu time       0.01 seconds
+      system cpu time     0.00 seconds
+      memory              398.59k
+      OS Memory           48804.00k
+      Timestamp           09/02/2025 07:50:52 PM
+      Step Count                        888  Switch Count  6
+      Page Faults                       0
+      Page Reclaims                     48
+      Page Swaps                        0
+      Voluntary Context Switches        41
+      Involuntary Context Switches      0
+      Block Input Operations            0
+      Block Output Operations           8
+      
+
+NOTE: Fileref _ASSUMP has been deassigned.
+16                                                         The SAS System                    Tuesday, September  2, 2025 03:50:52 PM
+
+NOTE: HTML report saved to /home/u61946510/TLFs/Output/ADSL_Tables/ADSL_Assumptions/assumption_checks.html
+301        
+302        /* Reset log back to SAS environment */
+303        proc printto;
+304        run;
+
