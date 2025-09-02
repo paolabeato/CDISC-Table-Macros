@@ -24,61 +24,36 @@ Macros for baseline demographic summaries (Table 14.1.x style):
 
 These macros share the same parameter set. `%adsl_advanced` extends `%adsl_basic` by including **Overall columns** and **p-values**.
 
-+------------------+----------------------------------------------------------------------------------+
-| Parameter        | Description                                                                      |
-+==================+==================================================================================+
-| **pop**          | Population flag variable (e.g., `ITTFL`, `SAFFL`, `FASFL`)                       |
-+------------------+----------------------------------------------------------------------------------+
-| **popdesc**      | Population description for titles (e.g., *Intent-to-Treat*, *Safety Population*) |
-+------------------+----------------------------------------------------------------------------------+
-| **popval**       | Value indicating inclusion in population (typically `'Y'`)                       |
-+------------------+----------------------------------------------------------------------------------+
-| **trtvar**       | Treatment variable for grouping (e.g., `ARM`, `TRT01P`)                          |
-+------------------+----------------------------------------------------------------------------------+
-| **outrtf**       | Output RTF file path (required)                                                  |
-+------------------+----------------------------------------------------------------------------------+
-| **tablenum**     | Table number for title (e.g., `14.1.1`)                                          |
-+------------------+----------------------------------------------------------------------------------+
-| **denom_mode**   | Denominator method for percentages:\                                             |
-|                  | `FULL` = all patients in population\                                             |
-|                  | `NONMISS` = only non-missing values                                              |
-+------------------+----------------------------------------------------------------------------------+
-| **show_missing** | Display missing categories: `Y` = Yes, `N` = No                                  |
-+------------------+----------------------------------------------------------------------------------+
-| **dostat**       | Calculate p-values: `Y` = Yes, `N` = No                                          |
-+------------------+----------------------------------------------------------------------------------+
-| **test_type**    | Statistical test for continuous variables: `ANOVA` or `KW` (Kruskal–Wallis)      |
-+------------------+----------------------------------------------------------------------------------+
-| **dooverall**    | Include an Overall column across treatment groups: `Y` = Yes, `N` = No           |
-+------------------+----------------------------------------------------------------------------------+
-| **trt_order**    | Explicit order for treatment arms (e.g., `Placebo DrugA`)                        |
-+------------------+----------------------------------------------------------------------------------+
-| **tab_title**    | Main table title                                                                 |
-+------------------+----------------------------------------------------------------------------------+
-| **tab_subtitle** | Optional subtitle (appears below main title)                                     |
-+------------------+----------------------------------------------------------------------------------+
-| **src**          | Source footnote text (e.g., *ADSL*)                                              |
-+------------------+----------------------------------------------------------------------------------+
-| **output_type**  | Output type: `RTF` (default) or `PDF`                                            |
-+------------------+----------------------------------------------------------------------------------+
+| Parameter        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **pop**          | Population flag variable (e.g., `ITTFL`, `SAFFL`, `FASFL`).                 |
+| **popdesc**      | Population description for titles (e.g., *Intent-to-Treat*, *Safety*).      |
+| **popval**       | Value indicating inclusion in population (typically `'Y'`).                 |
+| **trtvar**       | Treatment variable for grouping (e.g., `ARM`, `TRT01P`).                    |
+| **outrtf**       | Output RTF file path (**required**).                                        |
+| **tablenum**     | Table number for title (e.g., `14.1.1`).                                    |
+| **denom_mode**   | Denominator for percentages: `FULL` (all in pop) \| `NONMISS` (non-missing only). |
+| **show_missing** | Show missing categories in counts/percents: `Y` \| `N`.                     |
+| **dostat**       | Calculate p-values (for advanced table): `Y` \| `N`.                        |
+| **test_type**    | Continuous var test: `ANOVA` \| `KW` (Kruskal–Wallis).                      |
+| **dooverall**    | Include an Overall column: `Y` \| `N`.                                      |
+| **trt_order**    | Explicit arm order (e.g., `Placebo DrugA`).                                 |
+| **tab_title**    | Main table title.                                                           |
+| **tab_subtitle** | Optional subtitle.                                                          |
+| **src**          | Source footnote text (e.g., `ADSL`).                                        |
+| **output_type**  | Output type: `RTF` (default) \| `PDF`.  
 
 ### 🔹 `%adsl_assumptions`
 
 This macro checks assumptions for continuous variables to guide the choice of statistical test.
 
-+--------------+--------------------------------------------------------------------------------+
-| Parameter    | Description                                                                    |
-+==============+================================================================================+
-| **data**     | Input dataset containing analysis population (default: `work_population`)      |
-+--------------+--------------------------------------------------------------------------------+
-| **contvars** | Space-separated list of continuous variables to check                          |
-+--------------+--------------------------------------------------------------------------------+
-| **trtvar**   | Treatment variable for grouping (required)                                     |
-+--------------+--------------------------------------------------------------------------------+
-| **outdir**   | Output directory for HTML report. If empty, creates temporary report in `WORK` |
-+--------------+--------------------------------------------------------------------------------+
-| **alpha**    | Significance level for tests (default: `0.05`)                                 |
-+--------------+--------------------------------------------------------------------------------+
+| Parameter     | Description                                                                          |
+|---------------|--------------------------------------------------------------------------------------|
+| **data**      | Input dataset containing analysis population (default: `work_population`).           |
+| **contvars**  | Space-separated list of continuous variables to check.                               |
+| **trtvar**    | Treatment variable for grouping (**required**).                                      |
+| **outdir**    | Output directory for HTML report; if blank, creates a temporary report in `WORK`.    |
+| **alpha**     | Significance level for tests (default: `0.05`).    
 
 ## 📊 Example Workflow
 
