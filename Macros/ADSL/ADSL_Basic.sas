@@ -60,40 +60,6 @@
 * DATE: 09/02/2025
 * VERSION: 1.0
 *******************************************************************************/
-
-/* *********************************************************************************
-* STATISTICAL NOTE: Choosing between ANOVA and Kruskal-Wallis
-* 
-* - The default test for continuous variables is ANOVA, which assumes
-*   normality and equal variance across treatment groups. This is
-*   the industry standard for common demographics like Age and BMI.
-*
-* - The Kruskal-Wallis test (test_type=KW) is a non-parametric
-*   alternative that should be selected if:
-*     1. The data is severely skewed or has significant outliers.
-*     2. The sample size is very small, violating normality assumptions.
-*     3. The variable is ordinal rather than truly continuous.
-*
-* RECOMMENDED WORKFLOW FOR STATISTICAL RIGOR:
-*   1. First, run the %adsl_basic macro with dostat=N to create the work_population
-*      dataset without p-values.
-*      Example: %adsl_basic(... , dostat=N, ...)
-*
-*   2. Run the companion %check_assumptions macro (provided in this repository)
-*      on the work_population dataset to evaluate normality and equal variance.
-*      Example: %check_assumptions(data=work_population,
-								   contvars=AGE WEIGHT HEIGHT BMI,
-								   trtvar=ARM,
-								   outdir=/path/to/output);
-*
-*   3. Review the output HTML report and SAS log recommendations. If assumptions
-*      are violated for any key variable, re-run %adsl_basic with test_type=KW.
-*      Example: %adsl_basic(... , dostat=N, test_type=KW, ...)
-*
-* - This workflow ensures the statistical tests in the final tables are
-*   methodologically sound and defensible.
-***********************************************************************************/
-
 /* =========================
    0) Output wrappers & formats
    ========================= */
